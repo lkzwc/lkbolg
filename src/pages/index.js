@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="流客科技-万网之流，来着皆客！"
+      description="流客科技-万网之流，来着皆客"
     >
       <HomepageHeader />
       <main>
