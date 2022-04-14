@@ -79,6 +79,10 @@ const config = {
                 label: "流客科技",
                 href: "https://www.liuketh.cn",
               },
+              {
+                label: "流客科技产品导航",
+                href: "https://lkth.vercel.app",
+              },
             ],
           },
           {
@@ -116,7 +120,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} 流客科技`,
+        copyright: `Copyright © ${new Date().getFullYear()} 流客科技-万网之流,来者皆客`,
       },
       prism: {
         theme: lightCodeTheme,

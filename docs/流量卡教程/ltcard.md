@@ -7,4 +7,4 @@ tags: [流量卡, 联通流量卡, 联通流量卡充值, 联通流量卡在线�
 
 ## 联通流量卡
 
-![陕西省内联通流量卡](@site/static/img/sx.jpg)
+![陕西省内联通流量卡](@site/static/img/card/sx.jpg)

@@ -25,4 +25,4 @@ keywords:
 
 ## 电信流量卡
 
-![电信流量卡](@site/static/img/dx.jpg)
+![电信流量卡](@site/static/img/card/dx.jpg)
