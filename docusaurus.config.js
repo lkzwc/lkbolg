@@ -43,6 +43,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       autoCollapseSidebarCategories: true,
+      metadata: [{ name: "keywords", content: "cooking, blog" }],
       navbar: {
         title: "流客科技",
         logo: {
