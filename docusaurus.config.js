@@ -23,15 +23,14 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
+          // breadcrumbs: false,
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         blog: {
           showReadingTime: true,
+          blogSidebarTitle: "All posts",
+          blogSidebarCount: "ALL",
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -43,11 +42,12 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      autoCollapseSidebarCategories: true,
       navbar: {
         title: "流客科技",
         logo: {
           alt: "流客科技 Logo",
-          src: "img/logo.svg",
+          src: "img/logo.png",
         },
         items: [
           {
@@ -72,7 +72,7 @@ const config = {
             items: [
               {
                 label: "流量卡教程",
-                to: "/docs/流客科技",
+                to: "/docs",
               },
               {
                 label: "流客科技",
