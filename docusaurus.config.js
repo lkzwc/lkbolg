@@ -43,7 +43,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       autoCollapseSidebarCategories: true,
-      metadata: [{ name: "keywords", content: "cooking, blog" }],
+      metadata: [
+        {
+          name: "keywords",
+          content: "流客科技, 流量卡官网, 物联卡官网,流量卡免费申请",
+        },
+      ],
       navbar: {
         title: "流客科技",
         logo: {
@@ -58,6 +63,11 @@ const config = {
             label: "流量卡使用手册",
           },
           { to: "/blog", label: "产品政策", position: "left" },
+          {
+            to: "https://lkth.vercel.app",
+            label: "产品合集",
+            position: "left",
+          },
           {
             href: "https://lkth.vercel.app",
             label: "官方",
@@ -77,11 +87,11 @@ const config = {
               },
               {
                 label: "流客科技",
-                href: "https://www.liuketh.cn",
+                to: "https://www.liuketh.cn",
               },
               {
                 label: "流客科技产品导航",
-                href: "https://lkth.vercel.app",
+                to: "https://lkth.vercel.app",
               },
             ],
           },
@@ -90,15 +100,15 @@ const config = {
             items: [
               {
                 label: "流量卡",
-                href: "weixin://dl/business/?t=b4nr2JN2NXv",
+                to: "weixin://dl/business/?t=b4nr2JN2NXv",
               },
               {
                 label: "内部套餐卡",
-                href: "http://tc.liuketh.cn/",
+                to: "http://tc.liuketh.cn/",
               },
               {
                 label: "互联网卡",
-                href: "https://card.xuankaba.com/t/0.x5bgrv",
+                to: "https://card.xuankaba.com/t/0.x5bgrv",
               },
             ],
           },
@@ -111,11 +121,11 @@ const config = {
               },
               {
                 label: "手机靓号",
-                href: "http://iot.liuketh.cn/",
+                to: "http://iot.liuketh.cn/",
               },
               {
                 label: "精品靓号",
-                href: "http://lh.liuketh.cn",
+                to: "http://lh.liuketh.cn",
               },
             ],
           },
