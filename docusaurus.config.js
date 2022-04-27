@@ -43,6 +43,14 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       autoCollapseSidebarCategories: true,
+      announcementBar: {
+        id: "support_us",
+        content:
+          '流客科技, please fill <a target="_blank" rel="noopener noreferrer" href="#">this survey</a>',
+        backgroundColor: "#fadddd",
+        textColor: "red",
+        isCloseable: false,
+      },
       metadata: [
         {
           name: "keywords",
@@ -57,10 +65,49 @@ const config = {
         },
         items: [
           {
-            type: "doc",
-            docId: "流客科技",
+            type: "dropdown",
+            docId: "docs/classify",
             position: "left",
-            label: "流量卡使用手册",
+            label: "流量卡分类",
+            items: [
+              {
+                // type: "doc",
+                label: "移动流量卡",
+                docId: "ydcard",
+                to: "/docs/ydcard",
+              },
+              {
+                // type: "doc",
+                label: "联通流量卡",
+                to: "/docs/ltcard",
+              },
+              {
+                label: "电信流量卡",
+                to: "/docs/dxcard",
+              },
+            ],
+          },
+          {
+            position: "left",
+            label: "流量卡办理",
+            to: "/docs/appaly",
+          },
+          {
+            // type: "doc",
+            docId: "hot",
+            position: "left",
+            label: "流量卡无限不限速",
+            to: "/hot",
+          },
+          // {
+          //   type: "doc",
+          //   docId: "agent",
+          //   position: "left",
+          //   label: "流量卡代理",
+          // },
+          {
+            type: "localeDropdown",
+            position: "right",
           },
           { to: "/blog", label: "产品政策", position: "left" },
           {

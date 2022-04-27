@@ -1,7 +1,7 @@
 ---
 id: dxcard
 slug: /dxcard
-title: 电信流量卡充值教程
+title: 电信流量卡
 tags: [流量卡, 电信流量卡, 电信流量卡充值, 电信流量卡在线申请]
 description: 流量卡,电信流量卡免费申请,电信流量卡充值教程
 image: site/static/img/dx.jpg
