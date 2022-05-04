@@ -46,8 +46,8 @@ const config = {
       announcementBar: {
         id: "support_us",
         content:
-          '流客科技, please fill <a target="_blank" rel="noopener noreferrer" href="#">this survey</a>',
-        backgroundColor: "#fadddd",
+          "流客科技流量卡、手机靓号、随身wifi、内部套餐卡,全网招收实力代理，微信同号：155563 55573",
+        backgroundColor: "#363636",
         textColor: "red",
         isCloseable: false,
       },
@@ -59,6 +59,7 @@ const config = {
       ],
       navbar: {
         title: "流客科技",
+        style: "primary",
         logo: {
           alt: "流客科技 Logo",
           src: "img/logo.png",
@@ -97,23 +98,22 @@ const config = {
             docId: "hot",
             position: "left",
             label: "流量卡无限不限速",
-            to: "/hot",
+            to: "docs/hot",
           },
-          // {
-          //   type: "doc",
-          //   docId: "agent",
-          //   position: "left",
-          //   label: "流量卡代理",
-          // },
+          {
+            docId: "agent",
+            label: "流量卡代理",
+            position: "left",
+            to: "docs/agent",
+          },
           {
             type: "localeDropdown",
             position: "right",
           },
-          { to: "/blog", label: "产品政策", position: "left" },
+          { to: "/blog", label: "热门产品" },
           {
             to: "https://lkth.vercel.app",
             label: "产品合集",
-            position: "left",
           },
           {
             href: "https://lkth.vercel.app",
@@ -129,21 +129,17 @@ const config = {
             title: "友链",
             items: [
               {
-                label: "流量卡教程",
-                to: "/docs",
+                label: "关于我们",
+                to: "docs",
               },
               {
-                label: "流客科技",
-                to: "https://www.liuketh.cn",
-              },
-              {
-                label: "流客科技产品导航",
+                label: "产品导航",
                 to: "https://lkth.vercel.app",
               },
             ],
           },
           {
-            title: "热门产品",
+            title: "流量卡产品",
             items: [
               {
                 label: "流量卡",
@@ -160,14 +156,10 @@ const config = {
             ],
           },
           {
-            title: "精选产品",
+            title: "靓号系列",
             items: [
               {
-                label: "Blog",
-                to: "/blog",
-              },
-              {
-                label: "手机靓号",
+                label: "免费靓号",
                 to: "http://iot.liuketh.cn/",
               },
               {
