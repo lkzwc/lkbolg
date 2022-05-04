@@ -59,7 +59,6 @@ const config = {
       ],
       navbar: {
         title: "流客科技",
-        style: "primary",
         logo: {
           alt: "流客科技 Logo",
           src: "img/logo.png",
