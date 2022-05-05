@@ -7,7 +7,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "流客科技",
-  tagline: "流客科技-万网之流，来着皆客",
+  tagline:
+    "流客科技-万网之流，来着皆客。提供IOT全面服务，包括通信领域，物联网领域，流量卡领域，可进行手机卡办理，手机靓号办理，手机靓号155555、1555522、1555533、1314520靓号办理，手机话费9折充值，全国手机话费9折直冲，内部套餐卡办理！智能监控，智能联控等物联网服务！",
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
   onBrokenLinks: "throw",

@@ -4,8 +4,30 @@ import styles from "./styles.module.css";
 
 const FeatureList = [
   {
+    title: "流量卡",
+    img: require("@site/static/img/index/card.png").default,
+    description: (
+      <>
+        流量卡全国通用、流量卡不限速、不限流量卡、可以满足个人企业日常的使用，如有特殊需求可以定制！
+      </>
+    ),
+  },
+  {
+    title: "随身wifi",
+    img: require("@site/static/img/index/wifi.png").default,
+    description: <>服务始于合作,一次成交,服务终身！</>,
+  },
+  {
+    title: "内部套餐卡",
+    img: require("@site/static/img/index/vip.png").default,
+    description: <>我们为客户提供24H的服务,排除您在使用过程中遇到的疑难杂症</>,
+  },
+];
+
+const FeatureListWhy = [
+  {
     title: "应用广泛",
-    Svg: require("@site/static/img/use.svg").default,
+    Svg: require("@site/static/img/index/use.svg").default,
     description: (
       <>
         流量卡全国通用、流量卡不限速、不限流量卡、可以满足个人企业日常的使用，如有特殊需求可以定制！
@@ -14,21 +36,25 @@ const FeatureList = [
   },
   {
     title: "一次合作，终身服务",
-    Svg: require("@site/static/img/cooperation.svg").default,
+    Svg: require("@site/static/img/index/cooperation.svg").default,
     description: <>服务始于合作,一次成交,服务终身！</>,
   },
   {
     title: "24小时服务",
-    Svg: require("@site/static/img/server.svg").default,
+    Svg: require("@site/static/img/index/server.svg").default,
     description: <>我们为客户提供24H的服务,排除您在使用过程中遇到的疑难杂症</>,
   },
 ];
 
-function Feature({ Svg, title, description }) {
+function Feature({ Svg, img, title, description }) {
   return (
     <div className={clsx("col col--4")}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        {Svg ? (
+          <Svg className={styles.featureSvg} role="img" />
+        ) : (
+          <img src={img} width={{ width: "50px" }} />
+        )}
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
@@ -38,12 +64,26 @@ function Feature({ Svg, title, description }) {
   );
 }
 
-export default function HomepageFeatures() {
+export function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
         <div className="row">
           {FeatureList.map((props, idx) => (
+            <Feature key={idx} {...props} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function HomepageFeaturesWhy() {
+  return (
+    <section className={styles.features}>
+      <div className="container">
+        <div className="row">
+          {FeatureListWhy.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
         </div>
