@@ -46,9 +46,9 @@ const config = {
       announcementBar: {
         id: "support_us",
         content:
-          "流客科技流量卡、手机靓号、随身wifi、内部套餐卡,全网招收实力代理，微信同号：155563 55573",
+          "流客科技流量卡、手机靓号、随身wifi、内部套餐卡,全网招收实力代理 &#128242;155563 55573",
         backgroundColor: "#363636",
-        textColor: "red",
+        textColor: "#00FF00",
         isCloseable: false,
       },
       metadata: [
@@ -93,11 +93,19 @@ const config = {
             to: "/docs/appaly",
           },
           {
-            // type: "doc",
-            docId: "hot",
             position: "left",
             label: "流量卡无限不限速",
-            to: "docs/hot",
+            to: "/docs/hot",
+            items: [
+              {
+                label: "电信畅享卡",
+                to: "/docs/cx",
+              },
+              {
+                label: "电信星卡",
+                to: "/docs/xingka",
+              },
+            ],
           },
           {
             docId: "agent",
@@ -168,7 +176,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} 流客科技-万网之流,来者皆客`,
+        copyright: `Copyright © ${new Date().getFullYear()} 流客科技-万网之流,来者皆客  &#128234; lk@liuketh.cn`,
       },
       prism: {
         theme: lightCodeTheme,

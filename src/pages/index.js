@@ -26,6 +26,8 @@ export default function Home() {
       description="流客科技-万网之流，来着皆客"
     >
       <HomepageHeader />
+      <legend>Choose your favorite monster</legend>
+      <HomepageHeader />
       <main>
         <HomepageFeatures />
       </main>
