@@ -96,7 +96,7 @@ const config = {
           {
             position: "left",
             label: "流量卡无限不限速",
-            to: "/docs/hot",
+            to: "/docs/cx",
             items: [
               {
                 label: "电信畅享卡",
