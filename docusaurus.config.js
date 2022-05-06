@@ -80,10 +80,12 @@ const config = {
               {
                 // type: "doc",
                 label: "联通流量卡",
+                docId: "ltcard",
                 to: "/docs/ltcard",
               },
               {
                 label: "电信流量卡",
+                docId: "dxcard",
                 to: "/docs/dxcard",
               },
             ],
@@ -95,16 +97,20 @@ const config = {
           },
           {
             position: "left",
-            label: "流量卡无限不限速",
-            to: "/docs/cx",
+            label: "流量卡通用不限速",
+            to: "/docs/hot",
             items: [
               {
-                label: "电信畅享卡",
+                label: "电信畅享卡39元100G",
                 to: "/docs/cx",
               },
               {
-                label: "电信星卡",
+                label: "电信星卡29元100G",
                 to: "/docs/xingka",
+              },
+              {
+                label: "雨燕卡29元103G 59元203G",
+                to: "/docs/hotlt",
               },
             ],
           },

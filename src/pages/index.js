@@ -19,7 +19,7 @@ function HomepageHeader() {
       </div>
       <div>
         <img
-          src={require("@site/static/img/index/earth.png").default}
+          src={require("@site/static/img/index/earth.webp").default}
           alt="模型图"
           style={{ height: "320px", marginLeft: "200px" }}
         />

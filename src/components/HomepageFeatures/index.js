@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 const FeatureList = [
   {
     title: "流量卡",
-    img: require("@site/static/img/index/card.png").default,
+    img: require("@site/static/img/index/card.webp").default,
     description: (
       <>
         流量卡全国通用、流量卡不限速、不限流量卡、可以满足个人企业日常的使用，如有特殊需求可以定制！
@@ -14,14 +14,14 @@ const FeatureList = [
   },
   {
     title: "随身wifi",
-    img: require("@site/static/img/index/wifi.png").default,
+    img: require("@site/static/img/index/wifi.webp").default,
     description: (
       <>全程高速，支持三网切换，可插拔、可带充电宝，最大支持8000毫安电池</>
     ),
   },
   {
     title: "内部套餐卡",
-    img: require("@site/static/img/index/vip.png").default,
+    img: require("@site/static/img/index/vip.webp").default,
     description: (
       <>
         营业厅永远无法办理的套餐，绝版手机套餐、保号套餐、低月租、优惠套餐等等
