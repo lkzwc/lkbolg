@@ -33,6 +33,10 @@ const config = {
           blogSidebarCount: "ALL",
           // Please change this to your repo.
         },
+        sitemap: {
+          changefreq: "weekly",
+          priority: 0.5,
+        },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
@@ -98,6 +102,7 @@ const config = {
           {
             position: "left",
             label: "流量卡通用不限速",
+            docId: "docs/hot",
             items: [
               {
                 label: "电信畅享卡39元100G",

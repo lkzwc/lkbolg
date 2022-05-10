@@ -1,5 +1,4 @@
 ---
-id: number
 slug: /number
 title: 手机靓号
 ---

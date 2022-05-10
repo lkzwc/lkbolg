@@ -1,5 +1,4 @@
 ---
-id: flowcard
 slug: /flowcard
 title: 流量卡
 ---
