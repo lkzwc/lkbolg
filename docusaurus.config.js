@@ -98,7 +98,6 @@ const config = {
           {
             position: "left",
             label: "流量卡通用不限速",
-            to: "docs/hot",
             items: [
               {
                 label: "电信畅享卡39元100G",
