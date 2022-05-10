@@ -110,7 +110,7 @@ const config = {
               },
               {
                 label: "雨燕卡29元103G 59元203G",
-                to: "/docs/hotlt",
+                to: "/docs/lt",
               },
             ],
           },
