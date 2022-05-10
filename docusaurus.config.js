@@ -98,7 +98,7 @@ const config = {
           {
             position: "left",
             label: "流量卡通用不限速",
-            to: "/docs/hot",
+            to: "docs/hot",
             items: [
               {
                 label: "电信畅享卡39元100G",
@@ -124,6 +124,10 @@ const config = {
           {
             to: "https://lkth.vercel.app",
             label: "产品合集",
+          },
+          {
+            type: "localeDropdown",
+            position: "right",
           },
           {
             href: "https://lkth.vercel.app",
