@@ -1,6 +1,6 @@
 ---
-id: agent
-slug: /agent
+id: flowcard
+slug: /flowcard
 title: 流量卡
 ---
 
