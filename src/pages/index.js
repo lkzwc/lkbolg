@@ -3,6 +3,7 @@ import clsx from "clsx";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Head from "@docusaurus/Head";
 import styles from "./index.module.css";
 import {
   HomepageFeaturesWhy,
@@ -30,11 +31,15 @@ function HomepageHeader() {
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
+  console.log("---", siteConfig?.title);
   return (
     <Layout
-      // title={`${""}`}
-      description="流客科技-万网之流，来着皆客。提供IOT全面服务，包括通信领域，物联网领域，流量卡领域，可进行手机卡办理，手机靓号办理，手机靓号155555、1555522、1555533、1314520靓号办理，手机话费9折充值，全国手机话费9折直冲，内部套餐卡办理！智能监控，智能联控等物联网服务"
+    // title={`${siteConfig.title}`}
+    // description="流客科技-万网之流，来着皆客。提供IOT全面服务，包括通信领域，物联网领域，流量卡领域，可进行手机卡办理，手机靓号办理，手机靓号155555、1555522、1555533、1314520靓号办理，手机话费9折充值，全国手机话费9折直冲，内部套餐卡办理！智能监控，智能联控等物联网服务"
     >
+      <Head>
+        <meta property="og:title" content={`${siteConfig.title}`} />
+      </Head>
       <HomepageHeader />
       <main>
         <legend

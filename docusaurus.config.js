@@ -12,11 +12,11 @@ const config = {
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
+  titleDelimiter: "-",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
   organizationName: "facebook", // Usually your GitHub org/user name.
   projectName: "docusaurus", // Usually your repo name.
-
   presets: [
     [
       "classic",
@@ -29,7 +29,6 @@ const config = {
         },
         blog: {
           showReadingTime: true,
-          blogSidebarTitle: "流客科技热门产品",
           blogSidebarCount: "ALL",
           // Please change this to your repo.
         },
@@ -124,14 +123,11 @@ const config = {
             position: "left",
             to: "docs/agent",
           },
-          { to: "/blog", label: "热门产品" },
+          { to: "blog", activeBasePath: "blog", label: "热门产品" },
+          { to: "news", activeBasePath: "news", label: "最新资讯" },
           {
             to: "https://lkth.vercel.app",
             label: "产品合集",
-          },
-          {
-            type: "localeDropdown",
-            position: "right",
           },
           {
             href: "https://lkth.vercel.app",
@@ -194,6 +190,16 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+  plugins: [
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        id: "news",
+        routeBasePath: "news",
+        path: "./news",
+      },
+    ],
+  ],
 };
 
 module.exports = config;
