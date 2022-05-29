@@ -3,7 +3,10 @@ import Layout from "@theme/Layout";
 import styles from "./index.module.css";
 export default function Index() {
   return (
-    <Layout title="Hello" description="Hello React Page">
+    <Layout
+      title="随身wifi云路由手机靓号内部套餐卡互联网卡手机卡优惠套餐"
+      description="2022年好用的随身wifi,云路由,手机靓号,内部套餐卡,互联网卡,手机卡优惠套餐免费申请办理啦"
+    >
       <div className={styles.container}>
         <div className={styles.card}>
           <a href="/blog/wifi">

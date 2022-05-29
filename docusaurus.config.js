@@ -6,13 +6,13 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "流客科技官网",
+  title: "流量卡物联卡手机靓号随身wifi手机优惠套餐申请办理-流客科技官网",
   tagline:
     "流客科技-万网之流，来着皆客。提供IOT全面服务,包括通信领域,物联网领域,流量卡领域,可进行手机卡办理,靓号办理,155555、1555522、1555533、1314520手机靓号办理,全国手机话费9折充值,内部套餐卡办理! 随身wifi,5G云路由,智能监控等物联网服务!",
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
-  // titleDelimiter: "-",
+  titleDelimiter: "-",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
   organizationName: "facebook", // Usually your GitHub org/user name.
