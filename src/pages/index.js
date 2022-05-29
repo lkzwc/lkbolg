@@ -15,7 +15,6 @@ function HomepageHeader() {
   return (
     <header className={clsx("hero hero--primary", styles.heroBanner)}>
       <div style={{ width: "40%" }}>
-        <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
       </div>
       <div>
@@ -31,15 +30,8 @@ function HomepageHeader() {
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
-  console.log("---", siteConfig?.title);
   return (
-    <Layout
-    // title={`${siteConfig.title}`}
-    // description="流客科技-万网之流，来着皆客。提供IOT全面服务，包括通信领域，物联网领域，流量卡领域，可进行手机卡办理，手机靓号办理，手机靓号155555、1555522、1555533、1314520靓号办理，手机话费9折充值，全国手机话费9折直冲，内部套餐卡办理！智能监控，智能联控等物联网服务"
-    >
-      <Head>
-        <meta property="og:title" content={`${siteConfig.title}`} />
-      </Head>
+    <Layout description="13年的行业领军者,为您提供靠谱稳定的流量卡、物联卡、随身wifi、手机靓号、话费9折充值、电信联通移动星卡、内部套餐卡等,免费办理申请,全程人工指导充值激活,省内流量卡买一送一,限时活动进行中,期待您的到来,售后服务终生无忧">
       <HomepageHeader />
       <main>
         <legend

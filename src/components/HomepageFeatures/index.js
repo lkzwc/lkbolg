@@ -8,7 +8,7 @@ const FeatureList = [
     img: require("@site/static/img/index/card.webp").default,
     description: (
       <>
-        流量卡全国通用、流量卡不限速、不限流量卡、可以满足个人企业日常的使用，如有特殊需求可以定制！
+        流量卡全国通用、大流量卡不限速、无限流量卡、可以满足个人企业日常的使用，如有特殊需求可以定制！
       </>
     ),
   },
@@ -24,7 +24,7 @@ const FeatureList = [
     img: require("@site/static/img/index/vip.webp").default,
     description: (
       <>
-        营业厅永远无法办理的套餐，绝版手机套餐、保号套餐、低月租、优惠套餐等等
+        营业厅永远无法办理的手机卡优惠套餐，绝版手机套餐、保号套餐、低月租套餐办理申请等等
       </>
     ),
   },

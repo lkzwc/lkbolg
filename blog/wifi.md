@@ -1,6 +1,6 @@
 ---
-slug: /flowcard
-title: 流量卡
+slug: /wifi
+title: 随身wifi
 ---
 
 # 流量卡[返利永久]

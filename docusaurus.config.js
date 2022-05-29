@@ -6,13 +6,13 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "流量卡官网-流量卡办理申请激活-物联卡激活办理免费申请-流客科技官网",
+  title: "流量卡-物联卡-随身wifi-免费申请办理送激活充值教程-流客科技官网",
   tagline:
-    "流客科技-万网之流，来着皆客。提供IOT全面服务，包括通信领域，物联网领域，流量卡领域，可进行手机卡办理，手机靓号办理，手机靓号155555、1555522、1555533、1314520靓号办理，手机话费9折充值，全国手机话费9折直冲，内部套餐卡办理！智能监控，智能联控等物联网服务！",
+    "流客科技-万网之流，来着皆客。提供IOT全面服务,包括通信领域,物联网领域,流量卡领域,可进行手机卡办理,靓号办理,155555、1555522、1555533、1314520手机靓号办理,全国手机话费9折充值,内部套餐卡办理! 随身wifi,5G云路由,智能监控等物联网服务!",
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
-  titleDelimiter: "-",
+  // titleDelimiter: "-",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
   organizationName: "facebook", // Usually your GitHub org/user name.
@@ -46,7 +46,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      autoCollapseSidebarCategories: true,
       announcementBar: {
         id: "support_us",
         content:
@@ -58,7 +57,8 @@ const config = {
       metadata: [
         {
           name: "keywords",
-          content: "流客科技, 流量卡官网, 物联卡官网,流量卡免费申请,流量卡办理",
+          content:
+            "流客科技, 流量卡官网, 物联卡官网,流量卡随身wifi免费办理申请",
         },
       ],
       navbar: {
@@ -71,7 +71,6 @@ const config = {
           {
             type: "dropdown",
             docId: "docs/classify",
-            position: "left",
             label: "流量卡分类",
             items: [
               {
@@ -94,13 +93,8 @@ const config = {
             ],
           },
           {
-            position: "left",
-            label: "流量卡办理",
-            to: "/docs/appaly",
-          },
-          {
-            position: "left",
-            label: "流量卡通用不限速",
+            type: "dropdown",
+            label: "【热门】流量卡通用不限速",
             docId: "docs/hot",
             items: [
               {
@@ -118,6 +112,50 @@ const config = {
             ],
           },
           {
+            label: "省内流量卡",
+            position: "left",
+            docId: "docs/shennei",
+            items: [
+              {
+                label: "陕西省内卡",
+                to: "/docs/shanxi",
+              },
+              {
+                label: "广东省内卡",
+                to: "/docs/shanxi",
+              },
+              {
+                label: "广西省内卡",
+                to: "/docs/shanxi",
+              },
+              {
+                label: "安徽省内卡",
+                to: "/docs/shanxi",
+              },
+              {
+                label: "河南省内卡",
+                to: "/docs/shanxi",
+              },
+              {
+                label: "湖南省内卡",
+                to: "/docs/shanxi",
+              },
+              {
+                label: "湖北省内卡",
+                to: "/docs/sx",
+              },
+              {
+                label: "江西省内卡",
+                to: "/docs/sx",
+              },
+            ],
+          },
+          {
+            position: "left",
+            label: "流量卡办理",
+            to: "/docs/appaly",
+          },
+          {
             docId: "agent",
             label: "流量卡代理",
             position: "left",
@@ -126,11 +164,7 @@ const config = {
           { to: "blog", activeBasePath: "blog", label: "热门产品" },
           { to: "news", activeBasePath: "news", label: "最新资讯" },
           {
-            to: "https://lkth.vercel.app",
-            label: "产品合集",
-          },
-          {
-            href: "https://lkth.vercel.app",
+            href: "https://lkthall.vercel.app",
             label: "官方",
             position: "right",
           },

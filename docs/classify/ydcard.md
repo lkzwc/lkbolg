@@ -48,7 +48,7 @@ style={{'height':'350px',width:'100%'}}
 
 <table>
   <tr>
-    <td bgcolor="#1E90FF">&#128226;基本介绍</td>
+    <td bgcolor="#1E90FF"><strong>&#128226;基本介绍</strong></td>
   </tr>
 </table>
 
@@ -59,7 +59,7 @@ style={{'height':'350px',width:'100%'}}
 
 <table>
   <tr>
-    <td bgcolor="#1E90FF">&#128226;优惠政策 首月免费（激活充值 100)</td>
+    <td bgcolor="#1E90FF"><strong>&#128226;优惠政策 首月免费（激活充值 100)</strong></td>
   </tr>
 </table>
 
@@ -71,7 +71,7 @@ style={{'height':'350px',width:'100%'}}
 
 <table>
   <tr>
-    <td bgcolor="#1E90FF">&#128226;定向流量</td>
+    <td bgcolor="#1E90FF"><strong>&#128226;定向流量</strong></td>
   </tr>
 </table>
 
