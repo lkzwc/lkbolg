@@ -42,6 +42,65 @@ const config = {
       }),
     ],
   ],
+  plugins: [
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "hot",
+        path: "hot",
+        routeBasePath: "hot",
+        sidebarPath: require.resolve("./sidebars.js"),
+        // ... 其他设置
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "shengnei",
+        path: "shengnei",
+        routeBasePath: "shengnei",
+        sidebarPath: require.resolve("./sidebars.js"),
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "agent",
+        path: "agent",
+        routeBasePath: "agent",
+        sidebarPath: require.resolve("./sidebars.js"),
+        // ... 其他设置
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "classify",
+        path: "classify",
+        routeBasePath: "classify",
+        sidebarPath: require.resolve("./sidebars.js"),
+        // ... 其他设置
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "appaly",
+        path: "appaly",
+        routeBasePath: "appaly",
+        sidebarPath: require.resolve("./sidebars.js"),
+        // ... 其他设置
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        id: "news",
+        routeBasePath: "news",
+        path: "news",
+      },
+    ],
+  ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -70,96 +129,91 @@ const config = {
         items: [
           {
             type: "dropdown",
-            docId: "docs/classify",
+            docId: "classify",
             label: "流量卡分类",
             items: [
               {
-                // type: "doc",
                 label: "移动流量卡",
-                docId: "ydcard",
-                to: "/docs/ydcard",
+                to: "classify/ydcard",
               },
               {
                 // type: "doc",
                 label: "联通流量卡",
-                docId: "ltcard",
-                to: "/docs/ltcard",
+                to: "classify/ltcard",
               },
               {
                 label: "电信流量卡",
-                docId: "dxcard",
-                to: "/docs/dxcard",
+                to: "classify/dxcard",
               },
             ],
           },
           {
             type: "dropdown",
             label: "【热门】流量卡通用不限速",
-            docId: "docs/hot",
+            docId: "hot",
             items: [
               {
                 label: "电信畅享卡39元100G",
-                to: "/docs/cx",
+                to: "hot/cx",
               },
               {
                 label: "电信星卡29元100G",
-                to: "/docs/xingka",
+                to: "hot/xingka",
               },
               {
                 label: "雨燕卡29元103G 59元203G",
-                to: "/docs/lt",
+                to: "hot/lt",
               },
             ],
           },
           {
+            type: "dropdown",
             label: "省内流量卡",
-            position: "left",
-            docId: "docs/shennei",
+            docId: "shengnei",
             items: [
               {
                 label: "陕西省内卡",
-                to: "/docs/shanxi",
+                to: "shengnei/shanxi",
               },
               {
                 label: "广东省内卡",
-                to: "/docs/shanxi",
+                to: "shengnei/guangdong",
               },
               {
                 label: "广西省内卡",
-                to: "/docs/shanxi",
+                to: "shengnei/guangxi",
               },
               {
                 label: "安徽省内卡",
-                to: "/docs/shanxi",
+                to: "shengnei/anhui",
               },
               {
                 label: "河南省内卡",
-                to: "/docs/shanxi",
+                to: "shengnei/henan",
               },
               {
                 label: "湖南省内卡",
-                to: "/docs/shanxi",
+                to: "shengnei/hunan",
               },
               {
                 label: "湖北省内卡",
-                to: "/docs/sx",
+                to: "shengnei/hubei",
               },
               {
                 label: "江西省内卡",
-                to: "/docs/sx",
+                to: "shengnei/jiangxi",
               },
             ],
           },
           {
-            position: "left",
+            docId: "appaly",
             label: "流量卡办理",
-            to: "/docs/appaly",
+            to: "appaly/appaly",
           },
           {
             docId: "agent",
             label: "流量卡代理",
-            position: "left",
-            to: "docs/agent",
+            to: "agent/agent",
           },
           { to: "blog", activeBasePath: "blog", label: "热门产品" },
           { to: "news", activeBasePath: "news", label: "最新资讯" },
@@ -224,16 +278,6 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
-  plugins: [
-    [
-      "@docusaurus/plugin-content-blog",
-      {
-        id: "news",
-        routeBasePath: "news",
-        path: "./news",
-      },
-    ],
-  ],
 };
 
 module.exports = config;
