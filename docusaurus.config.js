@@ -6,7 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "流量卡-物联卡-随身wifi-免费申请办理送激活充值教程-流客科技官网",
+  title: "流客科技官网",
   tagline:
     "流客科技-万网之流，来着皆客。提供IOT全面服务,包括通信领域,物联网领域,流量卡领域,可进行手机卡办理,靓号办理,155555、1555522、1555533、1314520手机靓号办理,全国手机话费9折充值,内部套餐卡办理! 随身wifi,5G云路由,智能监控等物联网服务!",
   url: "https://your-docusaurus-test-site.com",
@@ -215,7 +215,7 @@ const config = {
             label: "流量卡代理",
             to: "agent/agent",
           },
-          { to: "blog", activeBasePath: "blog", label: "热门产品" },
+          { to: "Products", activeBasePath: "blog", label: "热门产品" },
           { to: "news", activeBasePath: "news", label: "最新资讯" },
           {
             href: "https://lkthall.vercel.app",
