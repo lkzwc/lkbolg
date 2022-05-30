@@ -46,40 +46,19 @@ const config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "hot",
-        path: "hot",
-        routeBasePath: "hot",
-        sidebarPath: require.resolve("./sidebars.js"),
-        // ... 其他设置
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "shengnei",
-        path: "shengnei",
-        routeBasePath: "shengnei",
-        sidebarPath: require.resolve("./sidebars.js"),
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
         id: "agent",
         path: "agent",
         routeBasePath: "agent",
         sidebarPath: require.resolve("./sidebars.js"),
-        // ... 其他设置
       },
     ],
     [
       "@docusaurus/plugin-content-docs",
       {
         id: "classify",
-        path: "classify",
         routeBasePath: "classify",
+        path: "classify",
         sidebarPath: require.resolve("./sidebars.js"),
-        // ... 其他设置
       },
     ],
     [
@@ -90,6 +69,14 @@ const config = {
         routeBasePath: "appaly",
         sidebarPath: require.resolve("./sidebars.js"),
         // ... 其他设置
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        id: "wifi",
+        routeBasePath: "wifi",
+        path: "wifi",
       },
     ],
     [
@@ -128,86 +115,18 @@ const config = {
         },
         items: [
           {
-            type: "dropdown",
             docId: "classify",
-            label: "流量卡分类",
-            items: [
-              {
-                label: "移动流量卡",
-                to: "classify/ydcard",
-              },
-              {
-                // type: "doc",
-                label: "联通流量卡",
-                to: "classify/ltcard",
-              },
-              {
-                label: "电信流量卡",
-                to: "classify/dxcard",
-              },
-            ],
+            label: "流量卡",
+            to: "classify/dxcard",
           },
           {
-            type: "dropdown",
-            label: "【热门】流量卡通用不限速",
-            docId: "hot",
-            items: [
-              {
-                label: "电信畅享卡39元100G",
-                to: "hot/cx",
-              },
-              {
-                label: "电信星卡29元100G",
-                to: "hot/xingka",
-              },
-              {
-                label: "雨燕卡29元103G 59元203G",
-                to: "hot/lt",
-              },
-            ],
-          },
-          {
-            type: "dropdown",
-            label: "省内流量卡",
-            docId: "shengnei",
-            items: [
-              {
-                label: "陕西省内卡",
-                to: "shengnei/shanxi",
-              },
-              {
-                label: "广东省内卡",
-                to: "shengnei/guangdong",
-              },
-              {
-                label: "广西省内卡",
-                to: "shengnei/guangxi",
-              },
-              {
-                label: "安徽省内卡",
-                to: "shengnei/anhui",
-              },
-              {
-                label: "河南省内卡",
-                to: "shengnei/henan",
-              },
-              {
-                label: "湖南省内卡",
-                to: "shengnei/hunan",
-              },
-              {
-                label: "湖北省内卡",
-                to: "shengnei/hubei",
-              },
-              {
-                label: "江西省内卡",
-                to: "shengnei/jiangxi",
-              },
-            ],
+            docId: "wifi",
+            label: "上网设备",
+            to: "wifi",
           },
           {
             docId: "appaly",
-            label: "流量卡办理",
+            label: "免费领卡",
             to: "appaly/appaly",
           },
           {

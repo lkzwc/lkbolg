@@ -1,6 +1,34 @@
 import React from "react";
 import Layout from "@theme/Layout";
 import styles from "./index.module.css";
+
+const data = [
+  {
+    title: "手机靓号",
+    description: "手机靓号免费申请啦",
+    img: "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.guguzhu.com%2Fd%2Ffile%2Fandroid%2Fico%2F2021%2F07%2F02%2For02hm1gpdi.png&refer=http%3A%2F%2Fimg.guguzhu.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1656510588&t=051085f51f4bbcb6164aca8f47d84eec",
+    detail: "/blog/wifi",
+  },
+  {
+    title: "手机靓号",
+    description: "手机靓号免费申请啦",
+    img: "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.guguzhu.com%2Fd%2Ffile%2Fandroid%2Fico%2F2021%2F07%2F02%2For02hm1gpdi.png&refer=http%3A%2F%2Fimg.guguzhu.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1656510588&t=051085f51f4bbcb6164aca8f47d84eec",
+    detail: "/blog/wifi",
+  },
+  {
+    title: "手机靓号",
+    description: "手机靓号免费申请啦",
+    img: "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.guguzhu.com%2Fd%2Ffile%2Fandroid%2Fico%2F2021%2F07%2F02%2For02hm1gpdi.png&refer=http%3A%2F%2Fimg.guguzhu.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1656510588&t=051085f51f4bbcb6164aca8f47d84eec",
+    detail: "/blog/wifi",
+  },
+  {
+    title: "手机靓号",
+    description: "手机靓号免费申请啦",
+    img: "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.guguzhu.com%2Fd%2Ffile%2Fandroid%2Fico%2F2021%2F07%2F02%2For02hm1gpdi.png&refer=http%3A%2F%2Fimg.guguzhu.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1656510588&t=051085f51f4bbcb6164aca8f47d84eec",
+    detail: "/blog/wifi",
+  },
+];
+
 export default function Index() {
   return (
     <Layout
@@ -8,71 +36,16 @@ export default function Index() {
       description="2022年好用的随身wifi,云路由,手机靓号,内部套餐卡,互联网卡,手机卡优惠套餐免费申请办理啦"
     >
       <div className={styles.container}>
-        <div className={styles.card}>
-          <a href="/blog/wifi">
-            <strong>随身wifi</strong>
-          </a>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-            luctus aliquam dolor, eu lacinia lorem placerat vulputate. Duis
-            felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor
-            imperdiet nunc, at ultricies tellus laoreet sit amet. Sed auctor
-            cursus massa at porta. Integer ligula ipsum, tristique sit amet orci
-            vel, viverra egestas ligula.
-          </p>
-        </div>
-        <div className={styles.card}>
-          <a href="/blog/cloudnet">
-            <strong>云路由</strong>
-          </a>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-            luctus aliquam dolor, eu lacinia lorem placerat vulputate. Duis
-            felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor
-            imperdiet nunc, at ultricies tellus laoreet sit amet. Sed auctor
-            cursus massa at porta. Integer ligula ipsum, tristique sit amet orci
-            vel, viverra egestas ligula.
-          </p>
-        </div>
-        <div className={styles.card}>
-          <a href="/blog/number">
-            <strong>手机靓号</strong>
-          </a>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-            luctus aliquam dolor, eu lacinia lorem placerat vulputate. Duis
-            felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor
-            imperdiet nunc, at ultricies tellus laoreet sit amet. Sed auctor
-            cursus massa at porta. Integer ligula ipsum, tristique sit amet orci
-            vel, viverra egestas ligula.
-          </p>
-        </div>
-        <div className={styles.card}>
-          <a href="/blog/innercard">
-            <strong>内部套餐卡</strong>
-          </a>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-            luctus aliquam dolor, eu lacinia lorem placerat vulputate. Duis
-            felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor
-            imperdiet nunc, at ultricies tellus laoreet sit amet. Sed auctor
-            cursus massa at porta. Integer ligula ipsum, tristique sit amet orci
-            vel, viverra egestas ligula.
-          </p>
-        </div>
-        <div className={styles.card}>
-          <a href="/blog/netcard">
-            <strong>互联网卡</strong>
-          </a>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-            luctus aliquam dolor, eu lacinia lorem placerat vulputate. Duis
-            felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor
-            imperdiet nunc, at ultricies tellus laoreet sit amet. Sed auctor
-            cursus massa at porta. Integer ligula ipsum, tristique sit amet orci
-            vel, viverra egestas ligula.
-          </p>
-        </div>
+        {data.map((item) => (
+          <div className={styles.card}>
+            <a href={item?.detail} target={"_blank"}>
+              <strong>{item?.title}</strong>
+            </a>
+            <br></br>
+            <img src={item.img} />
+            <p>{item?.description}</p>
+          </div>
+        ))}
       </div>
     </Layout>
   );

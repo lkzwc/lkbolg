@@ -1,6 +1,6 @@
 ---
-slug: /guangxi
-title: 广西省内流量卡
+slug: /shengnei
+title: 省内流量卡
 ---
 
 2022 年最好用的联通流量卡来了，想不想要呢？

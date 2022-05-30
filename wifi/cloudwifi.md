@@ -1,6 +1,6 @@
 ---
-slug: /guangdong
-title: 广东省内流量卡
+slug: /cloudwifi
+title: 云路由
 ---
 
 2022 年最好用的联通流量卡来了，想不想要呢？
