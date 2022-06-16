@@ -55,9 +55,18 @@ const config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "classify",
-        routeBasePath: "classify",
-        path: "classify",
+        id: "flowcard",
+        routeBasePath: "flowcard",
+        path: "flowcard",
+        sidebarPath: require.resolve("./sidebars.js"),
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "hot",
+        routeBasePath: "hot",
+        path: "hot",
         sidebarPath: require.resolve("./sidebars.js"),
       },
     ],
@@ -115,9 +124,14 @@ const config = {
         },
         items: [
           {
-            docId: "classify",
+            docId: "flowcard",
             label: "流量卡",
-            to: "classify/dxcard",
+            to: "flowcard/dxcard",
+          },
+          {
+            docId: "innercard",
+            label: "内部套餐卡",
+            to: "hot/xingka",
           },
           {
             docId: "wifi",
