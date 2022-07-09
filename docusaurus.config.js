@@ -165,7 +165,7 @@ const config = {
             items: [
               {
                 label: "关于我们",
-                to: "docs",
+                to: "news/about",
               },
               {
                 label: "产品导航",
